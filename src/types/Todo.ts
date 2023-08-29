@@ -1,0 +1,1 @@
+export type TodoState = "NEW" | "UNFINISHED" | "EXPIRED" | "FINISHED"
