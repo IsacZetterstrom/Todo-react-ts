@@ -16,7 +16,7 @@ function App() {
   return (
     <>
     <BrowserRouter>
-      <PageBanner user={{Users}}/>
+      <PageBanner />
       <Routes>
         <Route path='/' element= {<Homepage />} />
         <Route path='/login' element= {<LoginPage />} />

@@ -1,15 +1,19 @@
 import { IUser } from "../interfaces/IUser";
-import { User } from "../db/db";
+import Users  from "../db/db";
 
-// type PageBannerProps = {
-//   user: IUser
-// }
+function PageBanner(): JSX.Element {
 
-function PageBanner(prop): JSX.Element {
   return (
     <header>
       <h2>header bitch</h2>
-      <p>Hi there {prop.username} {} What's up???</p>
+      
+      {
+        localStorage.getItem('username') ? 
+        (<p>Hi there {localStorage.getItem("username")} {localStorage.getItem('role')} What's up???</p>) 
+        : (<p>Not logged in</p>)
+      }
+      
+      
     </header>
   )
 }

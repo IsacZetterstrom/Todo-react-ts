@@ -2,6 +2,7 @@
 import { ITodo } from './ITodo'
 import { TTheme } from '../types/TThemes'
 import { TUserRole } from '../types/TUser'
+import Users from '../db/db';
 
 export interface IUserSetting {
     preferredTheme: TTheme;
