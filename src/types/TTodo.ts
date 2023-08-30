@@ -1,0 +1,1 @@
+export type TTodoState = "NEW" | "UNFINISHED" | "EXPIRED" | "FINISHED"
